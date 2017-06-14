@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1B09DEF-7E8F-4FF7-924E-7D12CB85EDE1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SinemaOtomasyonu</RootNamespace>
+    <AssemblyName>SinemaOtomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CrystalReport1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.cs">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdmin.Designer.cs">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnaform.Designer.cs">
+      <DependentUpon>FrmAnaform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmeFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmeFatura.Designer.cs">
+      <DependentUpon>FrmeFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFatura.Designer.cs">
+      <DependentUpon>FrmFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFaturaShow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFaturaShow.Designer.cs">
+      <DependentUpon>FrmFaturaShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilmEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilmEkle.Designer.cs">
+      <DependentUpon>FrmFilmEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFilmleriDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFilmleriDuzenle.Designer.cs">
+      <DependentUpon>FrmFilmleriDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFisler.Designer.cs">
+      <DependentUpon>FrmFisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFiyatlariAyarla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFiyatlariAyarla.Designer.cs">
+      <DependentUpon>FrmFiyatlariAyarla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFragman.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFragman.Designer.cs">
+      <DependentUpon>FrmFragman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFragmanEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFragmanEkle.Designer.cs">
+      <DependentUpon>FrmFragmanEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciDuzenle.Designer.cs">
+      <DependentUpon>FrmKullaniciDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKullaniciEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKullaniciEkle.Designer.cs">
+      <DependentUpon>FrmKullaniciEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKuponlariDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKuponlariDuzenle.Designer.cs">
+      <DependentUpon>FrmKuponlariDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalonEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalonEkle.Designer.cs">
+      <DependentUpon>FrmSalonEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalonlariDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalonlariDuzenle.Designer.cs">
+      <DependentUpon>FrmSalonlariDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSatisRaporu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSatisRaporu.Designer.cs">
+      <DependentUpon>FrmSatisRaporu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeansDuzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeansDuzenle.Designer.cs">
+      <DependentUpon>FrmSeansDuzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSeansEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSeansEkle.Designer.cs">
+      <DependentUpon>FrmSeansEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSinemaBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSinemaBilgi.Designer.cs">
+      <DependentUpon>FrmSinemaBilgi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmYeniKupon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYeniKupon.Designer.cs">
+      <DependentUpon>FrmYeniKupon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CrystalReport1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdmin.resx">
+      <DependentUpon>FrmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnaform.resx">
+      <DependentUpon>FrmAnaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmeFatura.resx">
+      <DependentUpon>FrmeFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFatura.resx">
+      <DependentUpon>FrmFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFaturaShow.resx">
+      <DependentUpon>FrmFaturaShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilmEkle.resx">
+      <DependentUpon>FrmFilmEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFilmleriDuzenle.resx">
+      <DependentUpon>FrmFilmleriDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFisler.resx">
+      <DependentUpon>FrmFisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFiyatlariAyarla.resx">
+      <DependentUpon>FrmFiyatlariAyarla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFragman.resx">
+      <DependentUpon>FrmFragman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFragmanEkle.resx">
+      <DependentUpon>FrmFragmanEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciDuzenle.resx">
+      <DependentUpon>FrmKullaniciDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKullaniciEkle.resx">
+      <DependentUpon>FrmKullaniciEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKuponlariDuzenle.resx">
+      <DependentUpon>FrmKuponlariDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalonEkle.resx">
+      <DependentUpon>FrmSalonEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalonlariDuzenle.resx">
+      <DependentUpon>FrmSalonlariDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSatisRaporu.resx">
+      <DependentUpon>FrmSatisRaporu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeansDuzenle.resx">
+      <DependentUpon>FrmSeansDuzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSeansEkle.resx">
+      <DependentUpon>FrmSeansEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSinemaBilgi.resx">
+      <DependentUpon>FrmSinemaBilgi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYeniKupon.resx">
+      <DependentUpon>FrmYeniKupon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\xx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cıkıs1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cıkıs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boskoltuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dolukoltuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\satis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PERDE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iptal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
