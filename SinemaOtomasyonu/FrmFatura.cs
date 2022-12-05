@@ -32,6 +32,10 @@ namespace SinemaOtomasyonu
 
         private void frmFatura_Load(object sender, EventArgs e)
         {
+            //Bu program ismail kundakcı tarafından yazılmıştır.
+
+            //ismail kundakcı(mail)-> ism.kundakci@hotmail.com
+            //ismail kundakcı(facebook) www.fb.com/ismkdc
             lblTam.Text = frmAnaForm.toplamtam.ToString()+" Tane Tam Bilet";
             lblOgrenci.Text = frmAnaForm.toplamogrenci.ToString()+" Tane Öğrenci Bilet";
             lblToplam.Text = "Toplam " + frmAnaForm.tutar + " TL";

@@ -32,6 +32,10 @@ namespace SinemaOtomasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //Bu program ismail kundakcı tarafından yazılmıştır.
+
+            //ismail kundakcı(mail)-> ism.kundakci@hotmail.com
+            //ismail kundakcı(facebook) www.fb.com/ismkdc
             if (sayi != -1)
             {
                 cmd.CommandText = string.Format("select * into Salon{0} from Salon", sayi.ToString());

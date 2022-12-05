@@ -22,6 +22,10 @@ namespace SinemaOtomasyonu
 
         private void FrmFisler_Load(object sender, EventArgs e)
         {
+            //Bu program ismail kundakcı tarafından yazılmıştır.
+
+            //ismail kundakcı(mail)-> ism.kundakci@hotmail.com
+            //ismail kundakcı(facebook) www.fb.com/ismkdc
             cmd = new OleDbCommand();
             da = new OleDbDataAdapter();
             da.SelectCommand = cmd;

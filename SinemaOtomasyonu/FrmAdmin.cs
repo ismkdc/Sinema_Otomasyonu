@@ -22,6 +22,12 @@ namespace SinemaOtomasyonu
             FrmSinemaBilgi bilgi = new FrmSinemaBilgi();
             bilgi.MdiParent = this;
             bilgi.Show();
+
+            //Bu program ismail kundakcı tarafından yazılmıştır.
+
+            //ismail kundakcı(mail)-> ism.kundakci@hotmail.com
+            //ismail kundakcı(facebook) www.fb.com/ismkdc
+
         }
 
         private void button2_Click(object sender, EventArgs e)

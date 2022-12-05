@@ -175,6 +175,10 @@ namespace SinemaOtomasyonu
             koltuklariKapat();
             fiyatlariCek();
             seansKontrolEt();
+            //Bu program ismail kundakcı tarafından yazılmıştır.
+
+            //ismail kundakcı(mail)-> ism.kundakci@hotmail.com
+            //ismail kundakcı(facebook) www.fb.com/ismkdc
         }
 
         private void cozunurlukAyarla()
@@ -272,6 +276,10 @@ namespace SinemaOtomasyonu
                 sayac++;
             }
             dr.Close();
+            //Bu program ismail kundakcı tarafından yazılmıştır.
+
+            //ismail kundakcı(mail)-> ism.kundakci@hotmail.com
+            //ismail kundakcı(facebook) www.fb.com/ismkdc
         }
 
 
@@ -350,6 +358,10 @@ namespace SinemaOtomasyonu
                     numericTam.Maximum = toplam;
                 }
             }
+            //Bu program ismail kundakcı tarafından yazılmıştır.
+
+            //ismail kundakcı(mail)-> ism.kundakci@hotmail.com
+            //ismail kundakcı(facebook) www.fb.com/ismkdc
         }
 
 
@@ -418,6 +430,10 @@ namespace SinemaOtomasyonu
             {
                 koltukDoldur(btn);
             }
+            //Bu program ismail kundakcı tarafından yazılmıştır.
+
+            //ismail kundakcı(mail)-> ism.kundakci@hotmail.com
+            //ismail kundakcı(facebook) www.fb.com/ismkdc
         }
 
         private void timerKontrol_Tick(object sender, EventArgs e)
